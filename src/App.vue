@@ -42,32 +42,37 @@ const pontos = [
   {
     nome: "Igreja do Céu",
     desc: "Um dos pontos mais visitados, com vista panorâmica incrível da cidade.",
-    img: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Igreja_do_C%C3%A9u_Vi%C3%A7osa_do_Cear%C3%A1.jpg"
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Igreja_do_C%C3%A9u_Vi%C3%A7osa_do_Cear%C3%A1.jpg/800px-Igreja_do_C%C3%A9u_Vi%C3%A7osa_do_Cear%C3%A1.jpg"
   },
   {
     nome: "Praça Clóvis Beviláqua",
     desc: "Centro histórico com casarões coloniais e muito movimento cultural.",
-    img: "https://www.viagenscinematograficas.com.br/wp-content/uploads/2021/11/Vicosa-do-Ceara-CE-O-que-fazer-2.jpg"
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Vicosa_do_Ceara_-_CE_-_Pra%C3%A7a_Clovis_Bevilacqua.jpg/800px-Vicosa_do_Ceara_-_CE_-_Pra%C3%A7a_Clovis_Bevilacqua.jpg"
   },
   {
-    nome: "Serra da Ibiapaba",
-    desc: "Natureza exuberante, clima agradável e trilhas incríveis.",
-    img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/3c/7b/b7/serra-da-ibiapaba.jpg"
+    nome: "Mirante da Serra",
+    desc: "Ponto ideal para apreciar o pôr do sol e a vista das serras ao redor.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Serra_da_Ibiapaba_-_Cear%C3%A1.jpg/800px-Serra_da_Ibiapaba_-_Cear%C3%A1.jpg"
+  }
+];
+const eventos = [
+  {
+    nome: "Festa de São Sebastião",
+    desc: "Celebração tradicional com missas, procissões e festas populares.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Festa_de_S%C3%A3o_Sebasti%C3%A3o_em_Vi%C3%A7osa_do_Cear%C3%A1.jpg/800px-Festa_de_S%C3%A3o_Sebasti%C3%A3o_em_Vi%C3%A7osa_do_Cear%C3%A1.jpg"
+  },
+  {
+    nome: "Exposição Agropecuária - ExpoVila",
+    desc: "Exposição agropecuária de Viçosa do Ceará, inclui exposições de animais, feira da agricultura familiar, cursos e atrações culturais.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Quadrilha_Junina_em_Vi%C3%A7osa_do_Cear%C3%A1.jpg/800px-Quadrilha_Junina_em_Vi%C3%A7osa_do_Cear%C3%A1.jpg"
+  },
+  {
+    nome: "Viçosa, mel e cachaça",
+    desc: "Festival que celebra a produção local de mel e cachaça, com degustações e shows musicais.",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Carnaval_em_Vi%C3%A7osa_do_Cear%C3%A1.jpg/800px-Carnaval_em_Vi%C3%A7osa_do_Cear%C3%A1.jpg"
   }
 ];
 
-const eventos = [
-  {
-    nome: "Festival de Inverno",
-    desc: "Evento tradicional com música, dança e gastronomia típica.",
-    img: "https://viagensecaminhos.com/wp-content/uploads/2023/07/festival-de-inverno-vicosa-do-ceara.jpg"
-  },
-  {
-    nome: "Festa do Padroeiro",
-    desc: "Celebração religiosa e cultural com procissões e feiras locais.",
-    img: "https://s2.glbimg.com/ZKJfGd9yTbKMBdsvwFFMyztpF-E=/0x0:1024x768/924x0/smart/filters:strip_icc()/s.glbimg.com/jo/g1/f/original/2015/09/30/festa_padroeiro_vicosa_ceara.jpg"
-  }
-];
 </script>
 
 <style scoped>
