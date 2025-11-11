@@ -1,7 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './assets/style.css'
+import router from './router'       // ok se ./router aponta para src/router/index.js
+import './assets/style.css'         // <<< caminho CORRETO para o CSS (note o ./assets)
 
-
-createApp(App).mount('#app')
-
+const app = createApp(App)
+app.use(router)
+app.mount('#app')
