@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'       // ok se ./router aponta para src/router/index.js
-import './assets/style.css'         // <<< caminho CORRETO para o CSS (note o ./assets)
+import router from './router'
+import './assets/style.css' // CSS global
 
 const app = createApp(App)
 app.use(router)
