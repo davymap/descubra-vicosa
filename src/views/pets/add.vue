@@ -19,7 +19,11 @@
         />
 
         <label class="label">Tutor</label>
-        <input type="text" class="input w-full" placeholder="Tutor" v-model="pet.tutor" />
+        <select class="select" v-model="pet.tutor_id">
+          <option v-for="tutor in tutores" :key="tutor.id" :value="tutor.id">
+            {{ tutor.nome }}
+          </option>
+        </select>
 
         <button class="btn btn-neutral mt-4" type="submit">Adicionar</button>
       </fieldset>
@@ -29,8 +33,9 @@
 
 <script setup>
 import { usePet } from "@/composables/usePet";
-
+import { useTutor } from "@/composables/useTutor";
 const { adicionarPet, pet } = usePet();
+const { tutores } = useTutor();
 </script>
 
 <style lang="scss" scoped></style>

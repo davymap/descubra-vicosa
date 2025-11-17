@@ -3,11 +3,15 @@ import { onMounted, ref } from "vue";
 
 export function useTutor() {
 
+  const tutor = ref({});
   const tutores = ref([]);
 
   const capturarTutores = async () => {
     tutores.value = await TutorsController.listarTutores();
-    console.log(tutores.value);
+  }
+
+  const capturarTutorId = async (tutor) => {
+    tutor.value = await TutorsController.capturarTutorId(tutor);
   }
 
   onMounted(() => {
@@ -16,7 +20,9 @@ export function useTutor() {
 
   return {
     capturarTutores,
-    tutores
+    capturarTutorId,
+    tutores,
+    tutor
   };
 
 }

@@ -6,7 +6,8 @@ export default {
   colecao: 'pets',
 
   async adicionarPet(pet) {
-    const PetModel = new Pet(pet);
+    const PetModel = new Pet(pet.nome, pet.raca, pet.data_nascimento, pet.tutor_id);
+    console.log(JSON.stringify(PetModel))
     try {
       await DBService.adicionar(this.colecao, PetModel);
     } catch (e) {

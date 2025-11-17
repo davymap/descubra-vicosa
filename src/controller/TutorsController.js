@@ -10,6 +10,11 @@ export default {
     return tutors.map(tutor => new Tutor(tutor))
   },
 
+  async capturarTutorId (chave) {
+    const tutor = await DBService.recuperarDocumento(this.colecao, chave);
+    return new Tutor(tutor);
+  },
+
   async deletarTutor(chave) {
     return await DBService.deletar(this.colecao, chave);
   }

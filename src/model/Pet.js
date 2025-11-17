@@ -1,3 +1,5 @@
+import { useTutor } from "@/composables/useTutor";
+
 export default class Pet {
 
   constructor(nome, raca, data_nascimento, tutor) {
@@ -5,16 +7,13 @@ export default class Pet {
     this.inicial = nome;
     this.raca = raca;
     this.data_nascimento = data_nascimento;
-    this.tutor_id = this.getTutorId(tutor);
+    this.tutor = tutor
+    this.tutor_id = this.getTutorId();
   }
 
-  getTutorId = (tutor) => {
-    return {
-      nome: 'bruce',
-      raca: 'labrador',
-      data_nascimento: '2020-01-01',
-      tutor_id: tutor
-    };
+  getTutorId = () => {
+    const { capturarTutorId } = useTutor();
+    return capturarTutorId(this.tutor);
   }
 
 }

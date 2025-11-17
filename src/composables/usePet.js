@@ -7,14 +7,12 @@ export function usePet() {
   const pet = ref({});
 
   const adicionarPet = async() => {
-    // pets.value = [{}, {}];
     await PetsController.adicionarPet(pet.value);
   };
 
   const listarPets = async() => {
-      pets.value = await PetsController.listarPets();
-      console.log(pets.value)
-    };
+    pets.value = await PetsController.listarPets();
+  };
 
 
   onMounted(() => {
