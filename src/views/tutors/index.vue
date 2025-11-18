@@ -45,17 +45,17 @@
                   <div>
                     <div class="font-bold">{{ tutor.nome }}</div>
                     <div class="text-sm opacity-50">
-                      {{ tutor.endereco.cidade ?? "Cliente sem cidade" }}
+                      {{ tutor.endereco?.cidade ?? "Cliente sem cidade" }}
                     </div>
                   </div>
                 </div>
               </td>
               <td>
-                {{ tutor.endereco.logradouro }} {{ tutor.endereco.numero ?? "S/N" }}
-                {{ tutor.endereco.cep }} {{ tutor.endereco.complemento }}
+                {{ tutor.endereco?.logradouro }} {{ tutor.endereco?.numero ?? "S/N" }}
+                {{ tutor.endereco?.cep }} {{ tutor.endereco?.complemento }}
                 <br />
                 <span class="badge badge-ghost badge-sm"
-                  >{{ tutor.endereco.cidade }}/{{ tutor.endereco.estado }}</span
+                  >{{ tutor.endereco?.cidade }}/{{ tutor.endereco?.estado }}</span
                 >
               </td>
               <td>
@@ -88,7 +88,7 @@ import breadcrumbs from "@/components/breadcrumbs.vue";
 import { useRouter } from "vue-router";
 import { useTutor } from "@/composables/useTutor";
 
-const { tutores, capturarTutores } = useTutor();
+const { tutores } = useTutor();
 
 const router = useRouter();
 

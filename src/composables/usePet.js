@@ -3,8 +3,8 @@ import { onMounted, ref } from "vue";
 
 export function usePet() {
 
-  const pets = ref([]);
   const pet = ref({});
+  const pets = ref([]);
 
   const adicionarPet = async() => {
     await PetsController.adicionarPet(pet.value);
@@ -14,12 +14,12 @@ export function usePet() {
     pets.value = await PetsController.listarPets();
   };
 
-
   onMounted(() => {
     listarPets();
   });
 
   return {
+    listarPets,
     adicionarPet,
     pet,
     pets

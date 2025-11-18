@@ -1,12 +1,11 @@
 export default class Tutor {
 
-  constructor(tutor) {
-    this.id = tutor.key;
-    this.nome = tutor.data.nome.toUpperCase();
-    this.inicial = tutor.data.nome.charAt(0).toUpperCase();
-    this.endereco = tutor.data.endereco;
-    this.telefones = tutor.data.telefones;
-    this.pais = tutor.data?.pais?.toUpperCase().trim();
+  constructor(key, nome, endereco, telefones) {
+    this.id = key;
+    this.nome = nome;
+    this.inicial = nome?.charAt(0).toUpperCase() || null;
+    this.endereco = endereco;
+    this.telefones = telefones;
   }
 
 }

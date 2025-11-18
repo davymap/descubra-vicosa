@@ -6,18 +6,14 @@ export default {
   colecao: 'pets',
 
   async adicionarPet(pet) {
-    const PetModel = new Pet(pet.nome, pet.raca, pet.data_nascimento, pet.tutor_id);
-    console.log(JSON.stringify(PetModel))
-    try {
-      await DBService.adicionar(this.colecao, PetModel);
-    } catch (e) {
-      return new Error('Algo deu errado', e);
-    }
+    const PetModel = new Pet(null, pet.nome, pet.raca, pet.data_nascimento, pet.tutor_id);
+    await PetModel.getTutor(PetModel.tutor_id);
+    await DBService.adicionar(this.colecao, PetModel);
   },
 
   async listarPets() {
     const pets = await DBService.listar(this.colecao);
-    return pets.map(pet => new Pet(pet.data.nome, pet.data.raca, pet.data.data_nascimento, pet.data.tutor_id));
+    return pets.map(pet => new Pet(pet.key, pet.data.nome, pet.data.raca, pet.data.data_nascimento, pet.data.tutor_id));
   },
 
 }
