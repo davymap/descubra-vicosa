@@ -1,17 +1,17 @@
 <template>
   <section class="page page-home">
-    <div class="hero">
+    <div class="hero fade-in">
       <h1>Descubra Viçosa do Ceará</h1>
       <p class="lead">História, cultura e beleza em um só lugar</p>
     </div>
 
     <section class="preview-cards">
-      <router-link to="/pontos" class="preview card">
+      <router-link to="/pontos" class="preview card fade-in delay-1 card-hover">
         <h3>Pontos Turísticos</h3>
         <p>Veja os principais pontos da cidade.</p>
       </router-link>
 
-      <router-link to="/eventos" class="preview card">
+      <router-link to="/eventos" class="preview card fade-in delay-2 card-hover">
         <h3>Eventos</h3>
         <p>Fique por dentro das festas e eventos locais.</p>
       </router-link>
@@ -21,7 +21,7 @@
   <section class="fotos-vicosa">
   <h2>Descubra mais sobre Viçosa</h2>
   <div class="galeria-vertical">
-    <div class="foto-card-grande">
+    <div class="foto-card-grande fade-in card-hover delay-1">
       <img src="https://i0.wp.com/guialugaresturisticos.com/wp-content/uploads/2018/05/vic3a7osa-do-cearc3a1122251784.jpg?resize=825%2C510&ssl=1" alt="Vista aérea de Viçosa">
       <div class="texto">
         <h3>Vista aérea de Viçosa do Ceará</h3>
@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <div class="foto-card-grande">
+    <div class="foto-card-grande fade-in card-hover delay-2">
       <img src="https://www.vicosaurgente.com.br/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-27-at-08.48.19.jpeg">
       <div class="texto">
         <h3>Cultura e Tradições</h3>
@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <div class="foto-card-grande">
+    <div class="foto-card-grande fade-in card-hover delay-3">
       <img src="https://i.ytimg.com/vi/2t__jNWwOHE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDfhLozAPhOJ2rSQZ12RAZeq-RcMw" alt="Natureza e serras">
       <div class="texto">
         <h3>Natureza e Serras</h3>
@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <div class="foto-card-grande">
+    <div class="foto-card-grande fade-in card-hover delay-4">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbaFXOJVlP5ZPEic9Fh-m6SM9cxUxegohbKKC053m4mhMisXuFZg-tr1WL_i8HdTehdITTkJJqv3chShtbl4b-9XAxcaPh-DepV0VGyMqWhhWos6nijMyRLPvjw3rvwF1n2DBfybmghTg/s1600/Vi%C3%A7osa+do+Cear%C3%A1.jpg" alt="Centro histórico">
       <div class="texto">
         <h3>Centro Histórico</h3>
@@ -145,5 +145,38 @@
   font-size: 1rem;
   opacity: 0.9;
 }
+
+/* === Animações globais adicionadas === */
+
+/* Fade-in suave ao surgir */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Delay opcional — para efeito em cascata */
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.30s; }
+.delay-3 { animation-delay: 0.45s; }
+.delay-4 { animation-delay: 0.60s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover com leve zoom */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(120,0,255,0.25);
+}
+
 
 </style>

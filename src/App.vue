@@ -19,7 +19,9 @@
       © 2025 Descubra Viçosa — Todos os direitos reservados.
     </footer>
   </div>
+
 </template>
+
 
 <script setup>
 

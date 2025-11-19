@@ -15,9 +15,10 @@
 
 <script setup>
 const eventos = [
-  { nome: "Festival Mi", desc: "Evento anual que reúne artistas locais e nacionais.", img: "https://www.ceara.gov.br/wp-content/uploads/2023/07/foto.jpg" },
-  { nome: "ExpoVila", desc: "Exposição agropecuária de Viçosa do Ceará.", img: "https://www.vicosa.ce.gov.br/fotos/4269/Img5_600x400.jpg" },
-  { nome: "Viçosa: mel e cachaça", desc: "Festival que celebra a produção local.", img: "https://www.opiniaoce.com.br/wp-content/uploads/2025/06/festival-vicosa-mel-e-cachaca-ocorre-entre-19-e-21-de-junho-.jpg" }
+  { nome: "Festival Mi", desc: "O Festival Mi (Festival Música na Ibiapaba) é mais do que um simples evento de shows; é um dos encontros de formação musical mais importantes do Brasil, realizado no cenário histórico e aconchegante de Viçosa do Ceará.", img: "https://www.ceara.gov.br/wp-content/uploads/2023/07/foto.jpg" },
+  { nome: "ExpoVila", desc: "A Exposição Agropecuária de Viçosa é o evento que celebra as raízes rurais e a força produtiva da Ibiapaba. A ExpoVila volta-se para a terra, valorizando o trabalho do homem e da mulher do campo em um ambiente de negócios e festa.", img: "https://www.vicosa.ce.gov.br/fotos/4269/Img5_600x400.jpg" },
+  { nome: "Viçosa: mel e cachaça", desc: "O Festival Viçosa, Mel e Cachaça é uma celebração dos aromas e sabores que dão fama à região. O evento exalta a vocação da cidade como grande produtora de mel e, especialmente, como a capital cearense da cachaça artesanal.", img: "https://www.opiniaoce.com.br/wp-content/uploads/2025/06/festival-vicosa-mel-e-cachaca-ocorre-entre-19-e-21-de-junho-.jpg" },
+  { nome: "Herença Nativa", desc: "Ele reúne, no cenário da serra, representantes de povos originários e comunidades tradicionais de todo o estado — indígenas, quilombolas, ciganos e sertanejos. É uma celebração vibrante da identidade cultural e a troca de saberes, rituais e memórias.", img: "https://www.sesc-ce.com.br/wp-content/uploads/2025/04/53660849808_51da722466_c.jpg" },
 ]
 </script>
 
