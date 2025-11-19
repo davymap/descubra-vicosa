@@ -30,7 +30,7 @@
     </div>
 
     <div class="foto-card-grande">
-      <img src="https://mapacultural.secult.ce.gov.br/files/agent/33896/file/977907/blob-2-9980282845121562a9ef85f96cd2a595.png" alt="Cultura e tradições">
+      <img src="https://www.vicosaurgente.com.br/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-27-at-08.48.19.jpeg">
       <div class="texto">
         <h3>Cultura e Tradições</h3>
         <p>Viçosa preserva suas raízes com festas típicas, música e culinária regional.</p>
@@ -69,12 +69,12 @@
   border-radius:10px;
   background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  color: #fff;
+  color: #000000;
 }
-.hero h1 { font-size: 2.4rem; margin:0 0 8px; text-shadow: 0 2px 10px rgba(0,0,0,0.6); }
+.hero h1 { font-size: 2.4rem; margin:0 0 8px; }
 .hero .lead { opacity:0.9; margin:0; }
 .preview-cards { display:flex; gap:20px; justify-content:center; margin-top:30px; padding-bottom:40px; flex-wrap:wrap; }
-.preview { width:260px; display:block; text-decoration:none; color:#fff; padding:18px; border-radius:12px; text-align:center; background:linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); box-shadow: 0 6px 18px rgba(0,0,0,0.12);}
+.preview { width:260px; display:block; text-decoration:none; color:#000000; padding:18px; border-radius:12px; text-align:center; background:linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); box-shadow: 0 6px 18px rgba(0,0,0,0.12);}
 .preview h3{ margin:0 0 6px;}
 
 .fotos-vicosa {
@@ -83,8 +83,7 @@
 }
 
 .fotos-vicosa h2 {
-  color: #d3b8ff;
-  text-shadow: 0 0 10px rgba(180, 100, 255, 0.6);
+  color: linear-gradient(135deg,#3a0f6f,#000000 80%);
   font-size: 2rem;
   margin-bottom: 2rem;
 }

@@ -22,11 +22,11 @@
 </template>
 
 <script setup>
-// nada necessário aqui (dados ficam nas views)
+
 </script>
 
 <style scoped>
-/* navbar */
+
 .navbar {
   background: linear-gradient(135deg,#3a0f6f,#000000 80%);
   color: #fff;
@@ -50,7 +50,6 @@
 .nav-links a { color: #f3e8ff; text-decoration:none; font-weight:600; }
 .nav-links a.router-link-active { text-decoration: underline; }
 
-/* layout simples */
 main { min-height: calc(100vh - 180px); }
 .footer {
   text-align:center;

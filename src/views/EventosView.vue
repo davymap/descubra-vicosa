@@ -22,7 +22,7 @@ const eventos = [
 </script>
 
 <style scoped>
-.section-title { text-align:center; margin-top:36px; color:#f3e8ff; text-shadow:0 2px 8px rgba(0,0,0,0.4); font-size:1.8rem; }
+.section-title { text-align:center; margin-top:36px; background: linear-gradient(180deg, rgba(255,255,255,0.06)); text-shadow:0 2px 8px rgba(0,0,0,0.4); font-size:1.8rem; }
 .cards { display:flex; gap:28px; justify-content:center; flex-wrap:wrap; padding:40px 20px 80px; }
 .card { width:320px; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.12); }
 .card img { width:100%; height:180px; object-fit:cover; display:block; }
