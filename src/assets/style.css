@@ -1,29 +1,78 @@
 :root{
-  --purple-1: #2b0050;   /* roxo escuro */
-  --purple-2: #5e1aa8;   /* roxo vibrante */
-  --bg: linear-gradient(180deg,#0b0010 0%, #2b0050 45%, #0a0010 100%);
-  --bg-soft: linear-gradient(180deg,#0b00102a, #2b005020);
+  --purple-1: #2b0050;   /* roxo mais escuro, uso principalmente nos títulos */
+  --purple-2: #5e1aa8;   /* roxo mais vivo – talvez eu use mais pra detalhes */
+  --bg: linear-gradient(180deg,#0b0010 0%, #2b0050 45%, #0a0010 100%); /* fundo padrão roxo */
+  --bg-soft: linear-gradient(180deg,#0b00102a, #2b005020); /* versão mais “suave” do fundo */
 }
 
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
+
 body{
   margin:0;
   font-family:Inter, "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: linear-gradient(180deg,#0b00102b, #f3f4f6 60%); /* leve gradiente + claro em baixo */
+  background: linear-gradient(180deg,#0b00102b, #f3f4f6 60%);
   color:#111;
   -webkit-font-smoothing:antialiased;
 }
 
-h1,h2,h3{ font-family: 'Merriweather', Georgia, serif; color:var(--purple-1) }
+h1,h2,h3{
+  font-family: 'Merriweather', Georgia, serif;
+  color:var(--purple-1);
+}
 
-.cards { display:flex; gap:28px; justify-content:center; flex-wrap:wrap; padding:40px 20px 80px; }
-.card { width:320px; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.12); border: 1px solid rgba(90,10,90,0.06); }
-.card img{ width:100%; height:180px; object-fit:cover; display:block; }
-.card-body{ padding:18px; text-align:center }
-.card-body h3{ margin:0 0 8px; color:var(--purple-1) }
-.card-body p{ margin:0; color:#666; font-size:0.95rem; }
+/* grid de cards – deixei flex pra poder quebrar em telas menores */
+.cards{
+  display:flex;
+  gap:28px;
+  justify-content:center;
+  flex-wrap:wrap;
+  padding:40px 20px 80px;
+}
 
+/* estilo geral dos cards, meio padrão de site de turismo mesmo */
+.card{
+  width:320px;
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
+  border: 1px solid rgba(90,10,90,0.06);
+}
+
+/* imagem do card – sempre preenchendo o espaço certinho */
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  display:block;
+}
+
+.card-body{
+  padding:18px;
+  text-align:center;
+}
+
+.card-body h3{
+  margin:0 0 8px;
+  color:var(--purple-1);
+}
+
+.card-body p{
+  margin:0;
+  color:#666;
+  font-size:0.95rem;
+}
+
+/* responsividade padrão – só ajusta pra telas menores */
 @media (max-width:900px){
-  .cards{ gap:18px; }
-  .card{ width:90%; max-width:420px; }
+  .cards{
+    gap:18px;
+  }
+
+  .card{
+    width:90%;
+    max-width:420px;
+  }
 }

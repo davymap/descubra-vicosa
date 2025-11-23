@@ -1,30 +1,33 @@
 <template>
   <div id="app">
+    <!--  barra de navegação principal -->
     <nav class="navbar">
       <div class="nav-inner">
         <div class="brand">Descubra Viçosa</div>
+
+        <!-- Eu mostro os links principais para navegar entre as páginas -->
         <ul class="nav-links">
-          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/">Início</router-link></li>
           <li><router-link to="/pontos">Pontos Turísticos</router-link></li>
           <li><router-link to="/eventos">Eventos</router-link></li>
         </ul>
       </div>
     </nav>
 
+    <!-- Aqui eu renderizo a página que o usuário abriu -->
     <main>
       <router-view />
     </main>
 
+    <!-- Eu coloco o rodapé padrão em todas as rotas -->
     <footer class="footer">
       © 2025 Descubra Viçosa — Todos os direitos reservados.
     </footer>
   </div>
-
 </template>
 
-
 <script setup>
-
+  /* Por enquanto não preciso de nenhuma lógica global mas deixo o script preparado caso precise depois */
 </script>
 
 <style scoped>
