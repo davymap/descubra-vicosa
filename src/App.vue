@@ -21,14 +21,10 @@
 
     <!-- Eu coloco o rodapé padrão em todas as rotas -->
     <footer class="footer">
-      © 2025 Descubra Viçosa — Todos os direitos reservados.
+      2025 Descubra Viçosa — Feito por Davi Morais
     </footer>
   </div>
 </template>
-
-<script setup>
-  /* Por enquanto não preciso de nenhuma lógica global mas deixo o script preparado caso precise depois */
-</script>
 
 <style scoped>
 

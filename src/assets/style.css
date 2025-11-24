@@ -1,6 +1,6 @@
 :root{
   --purple-1: #2b0050;   /* roxo mais escuro, uso principalmente nos títulos */
-  --purple-2: #5e1aa8;   /* roxo mais vivo – talvez eu use mais pra detalhes */
+  --purple-2: #5e1aa8;   /* roxo mais vivo, talvez eu use mais pra detalhes */
   --bg: linear-gradient(180deg,#0b0010 0%, #2b0050 45%, #0a0010 100%); /* fundo padrão roxo */
   --bg-soft: linear-gradient(180deg,#0b00102a, #2b005020); /* versão mais “suave” do fundo */
 }

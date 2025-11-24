@@ -21,6 +21,9 @@
   </section>
 </template>
 
+// o detalhe funciona pegando o ID direto da URL com o useRoute e depois
+eu busco esse ponto no meu array e mostro as infomações completas
+
 <script setup>
 import { useRoute } from "vue-router";
 import pontos from "../data/pontos.js"; // Eu importo aqui todos os pontos cadastrados
