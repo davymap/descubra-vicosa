@@ -1,0 +1,28 @@
+import PetsController from "@/controller/PetsController";
+import { onMounted, ref } from "vue";
+
+export function usePet() {
+
+  const pet = ref({});
+  const pets = ref([]);
+
+  const adicionarPet = async() => {
+    await PetsController.adicionarPet(pet.value);
+  };
+
+  const listarPets = async() => {
+    pets.value = await PetsController.listarPets();
+  };
+
+  onMounted(() => {
+    listarPets();
+  });
+
+  return {
+    listarPets,
+    adicionarPet,
+    pet,
+    pets
+  };
+
+}
