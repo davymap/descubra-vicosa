@@ -6,11 +6,11 @@ import HomeView from '@/views/HomeView.vue'
 import PontosView from '@/views/PontosView.vue'
 import EventosView from '@/views/EventosView.vue'
 
-const routes = [
+const routes = [ // Cada objeto dentro desse array representa uma página do site
   // Rota inicial: página Home
   { path: '/', name: 'home', component: HomeView },
 
-  // Página com a lista de pontos turísticos
+  // Página com a lista de pontos turístico
   { path: '/pontos', name: 'pontos', component: PontosView },
 
   // Página com os eventos da cidade
@@ -25,7 +25,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL), // Isso significa que o site vai usar o History API do navegador
   routes,
 })
 

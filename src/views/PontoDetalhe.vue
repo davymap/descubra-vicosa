@@ -25,7 +25,7 @@
 eu busco esse ponto no meu array e mostro as infomações completas
 
 <script setup>
-import { useRoute } from "vue-router";
+import { useRoute } from "vue-router"; // Aqui eu uso para pegar o ID do ponto que aparece no link
 import pontos from "../data/pontos.js"; // Eu importo aqui todos os pontos cadastrados
 
 const route = useRoute();
